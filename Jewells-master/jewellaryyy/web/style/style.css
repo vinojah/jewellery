@@ -1,0 +1,360 @@
+html
+{ height: 100%;}
+
+*
+{ margin: 0;
+  padding: 0;}
+
+  * {
+    box-sizing: border-box;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+p
+{ padding: 0 0 20px 0;
+  line-height: 1.7em;
+  color: antiquewhite}
+
+img
+{ border: 0;}
+
+/*HEADER
+--------------------------------------------------------------------------------------------------------*/
+
+#header
+{ background: #323534 url(Images/back.png) repeat-x;
+  height: 177px;
+  }
+
+h1 
+{ font: normal 100% 'algerian';
+  font-size: 300%;
+  color : #E5E5DB;
+  padding: 0 0 5px 0;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0 0 0 9px;} 
+
+h2
+{ font:normal 220% 'Edwardian Script ITC';
+  padding: 15px 0 5px 0;
+  color: #E5E5DB;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0 0 0 9px;}
+
+  #logo
+  { width: 880px;
+    position: relative;
+    height: 140px;
+    background: transparent;}
+  
+  #logo #logo_text 
+  { position: absolute; 
+    top: 10px;
+    left: 0;}
+  
+  #logo_text h1, #logo_text h1 a, #logo_text h1 a:hover 
+  { padding: 22px 0 0 0;
+    color: #FFF;
+    letter-spacing: 0.1em;
+    text-decoration: none;}
+  
+  #logo_text h1 a .logo_colour
+  { color: #E4EC04;}
+  
+  #logo_text a:hover .logo_colour
+  { color: #FFF;}
+
+/*-------------------------------------------------------------------------------------------------------------
+-----------------------------------END OF THE HEADER------------------------------------------------------*/
+
+
+a, a:hover
+{ outline: none;
+  text-decoration: underline;
+  color: #AEB002;}
+
+a:hover
+{ text-decoration: none;}
+
+
+ul
+{ margin: 2px 0 22px 17px;}
+
+ul li
+{ list-style-type: circle;
+  margin: 0 0 6px 0; 
+  padding: 0 0 4px 5px;
+  line-height: 1.5em;}
+
+ol
+{ margin: 8px 0 22px 20px;}
+
+ol li
+{ margin: 0 0 11px 0;}
+
+#main, #logo, #mainav, #footer
+{ margin-left: auto; 
+  margin-right: auto;}
+
+
+  
+
+
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol
+{margin:0; padding:0; list-style:none; font:normal 100%, arial;}
+
+#mainav
+{line-height:normal;}
+#mainav .drop::after, #mainav li li .drop::after 
+{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+
+#mainav
+{margin-bottom:2px; border-bottom:2px solid;}
+
+#mainav ul
+{text-transform:uppercase; text-align:center; font-size: 1.5pc}
+#mainav ul ul
+{z-index:9999; position:absolute; width:200px; text-transform:none; text-align:left;}
+#mainav ul ul ul
+{left:16px; top:0;}
+
+#mainav li
+{display:inline-block; position:relative; margin:0 30px 0 0; padding:0;}
+#mainav li:last-child
+{margin-right:0;}
+#mainav li li
+{width:100%; margin:0;}
+#mainav li a
+{display:block; padding:20px 0;}
+#mainav li li a
+{border:solid; border-width:0 0 1px 0;}
+
+#mainav .drop
+{padding-left:15px;}
+#mainav li li a, #mainav li li .drop
+{display:block; margin:0; padding:10px 15px;}
+#mainav .drop::after, #mainav li li .drop::after
+{content:"\f0d7";}
+#mainav .drop::after
+{top:25px; left:5px;}
+#mainav li li .drop::after
+{top:15px; left:5px;}
+#mainav ul ul
+{visibility:hidden; opacity:0;}
+#mainav ul li:hover > ul
+{visibility:visible; opacity:1;}
+
+#mainav form
+{display:none; margin:0; padding:20px 0;  }
+#mainav form select, #mainav form select option
+{display:block; cursor:pointer; outline:none;}
+#mainav form select
+{width:100%; padding:5px; border:1px solid;}
+#mainav form select option
+{margin:5px; padding:0; border:none;}
+#mainav
+{border-color:#FFFF00; background-color:rgba(36, 31, 31, 0.781);}
+#mainav li a
+{color:#FFFF00;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a
+{color:rgb(96, 238, 68); }
+#mainav li li a, #mainav .active li a
+{color:rgb(255, 255, 255); background-color:#000; border-color:#000;}
+#mainav li li:hover > a, #mainav .active .active > a
+{color:rgb(255, 255, 255); background-color:gray;}
+#mainav form select
+{color:rgb(255, 255, 255); background-color:#1F1F1F; border-color:rgba(245, 230, 26, 0.6);}
+
+/*----------------------------------------------end of the navigation----------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------*/
+
+/*content
+------------------------------------------------------------------------------------------------------------------------------------------------*/
+#content
+{ color:black;
+  font-family: Cambria Math;
+  padding-left: 450px;
+  font-size: 30px;
+  padding-bottom: 40px;
+  background: url(../Images/bgpic01.jpg); 
+  /*background-position: 0 bottom;*/
+  background-size : 675px 300px;
+  text-align: center;
+  }
+#content h3{
+    font-size:45px;
+    color:black;
+    padding-bottom:40px;
+    padding-right:50%;
+}
+#content h4{
+    color:black;
+    padding-bottom: 40px;
+    padding-right:50%;
+}
+#content a
+{color:blue;}
+
+#or_style{
+    
+    height: 250px;
+    padding-left: 150px;
+    padding-right:50%;
+}
+
+
+#cat
+{ color:black;
+  font-family: Cambria Math;
+  padding-left: 50px;
+  font-size: 30px;
+  padding-bottom: 200px;
+  background: url(../Images/1.jpg) ;
+  
+  
+  /*background-position: 0 bottom;*/
+  background-size : 675px 300px;
+  text-align: center;
+  }
+  
+  #cat p{
+      color: black;
+      
+  }
+
+#search
+{ color:black;
+  font-family: Cambria Math;
+  padding-left: 450px;
+  font-size: 30px;
+  padding-bottom: 200px;
+  background: url(../Images/45.jpg); 
+  /*background-position: 0 bottom;*/
+  background-size : 675px 300px;
+  text-align: center;
+  }
+  
+   #search p{
+      color: black;   
+  }
+
+
+#input{
+    height:25px;
+}    
+
+#button
+{
+   background-color: #1F1F1F;
+   width:100px;
+   height:40px;
+   color:whitesmoke;
+   font-size:20px;
+}
+
+
+
+/*footer
+------------------------------------------------------------------------------------------------------------------------------------*/
+#footer
+{ background: #323534 url(back.png) repeat-x;
+    height: 177px;}
+    
+h3
+{ font-size: 140%;
+  font: normal 170% 'times new roman';
+  padding: 15px 0 5px 0;
+  color:WHITE;}
+    
+#footer a:hover
+{ color: #FFF;
+  text-decoration: none;}
+
+#footer .social  {
+    line-height: 20px;
+	padding-bottom: 0px;
+}
+
+#footer .contact  {
+    line-height: 20px;
+	font-size: 14px;
+    padding-bottom: 0px;
+}   
+
+#footer .copy {
+    line-height: 20px;
+	font-size: 14px;
+    padding-bottom: 0px;
+}
+
+.hide {
+  display: none;
+}
+
+.view{
+    display:block;
+}
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    align:left;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    
+    background-color: goldenrod;
+    color: white;
+}
+
+
+h1{
+    alignment-adjust: center;
+    color: green;
+    
+}
+
+#data{
+   color:black;
+  font-family: Cambria Math;
+  padding-left: 50px;
+  font-size: 20px;
+  padding-bottom: 40px;
+  background: url(../Images/bgpic01.jpg); 
+  /*background-position: 0 bottom;*/
+  background-size : 675px 300px;
+  text-align: center;
+}
